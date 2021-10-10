@@ -18,7 +18,7 @@ function App() {
 
 
 
-  let name = window.location.href.replace("http://localhost:3000/", "");
+  let name = window.location.pathname.substring(1).split('/')[0]
   if (name !== "") {
     name = "to - " + name
   }
