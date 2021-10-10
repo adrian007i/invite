@@ -17,11 +17,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
-  color: white;
-  display: flex;
-  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex;
+  color: white; 
 }
 
 #letter{
@@ -32,6 +28,8 @@ body {
   width: 100%;
   align-self: self-end;
   cursor: pointer; 
+  position: absolute;
+  bottom: 0px;
 }
  
 #landing_content img{
@@ -83,10 +81,11 @@ body {
 
 #confirmation{
   font-size: 40px;
-  color: red;
-  align-self: end;
-  line-height: .9;
-  margin: 0 auto;
+  color: red;  
+  position: absolute; 
+  bottom: 0px;
+  text-align: center; 
+  width: 100%;
 }
 
 .Typewriter__cursor{
