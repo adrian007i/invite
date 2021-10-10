@@ -1,13 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0px;
+  background-color: black;
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 24px;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#app{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  color: white;
+  display: flex;
 }
+
+#letter{
+  width:250px; 
+}
+ 
+#landing_content{ 
+  width: 100%;
+  align-self: self-end;
+  cursor: pointer; 
+}
+ 
+#landing_content img{
+  opacity: .5;
+}
+
+#landing_content div{
+  position: relative;
+  bottom: 120px; 
+  color: #660808; 
+  font-weight: bold;
+}
+
+#landing_content p{
+  margin-top: 0px;
+}
+
+
+#letter_content,#typed{
+  width: 100%;  
+}
+
+#typed{
+  height: 300px;
+  padding-top: 70%;
+  line-height: .9;
+}
+
+#letter_content #accept{  
+  width: 100%;
+  text-align: center;
+}
+
+#accept button{
+  background-color: red;
+  color: white;
+  color: white; 
+  outline: none;
+  padding: 8px;
+  margin: 3px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+}
+
+.hide{
+  display:none;
+}
+
+#confirmation{
+  align-self: center; 
+  margin: auto;
+  font-size: 40px;
+  color:red;
+}
+
+.Typewriter__cursor{
+  display: none;
+}
+/* <Typist avgTypingDelay={200} cursor={{show : false}}>  
+<p>You're invited to</p><Typist.Delay ms={delay} />
+<p><b style={{"color":"red", "fontSize":"30px"} }>"The Awakening"</b></p><Typist.Delay ms={delay} />
+<p>on All Hallow's Eve</p><Typist.Delay ms={delay} />
+<p>at dusk until the witching hour</p><Typist.Delay ms={delay} />
+<p>Private Location</p><Typist.Delay ms={delay} />
+<p>A Masked Event- Costume Required</p>
+</Typist>  */
