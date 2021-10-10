@@ -1,6 +1,8 @@
 import Typewriter from "typewriter-effect";
+import { useState } from 'react';
 
 function App() {
+  const [bg, setBG] = useState("url('/lady.gif')"); 
 
   const showNote = () => {
     document.getElementById("bg_audio").play();
@@ -9,6 +11,7 @@ function App() {
   }
 
   const seeYou = () => { 
+    setBG("url('DONT.jpg')");
     document.getElementById("letter_content").classList.add("hide");
     document.getElementById("confirmation").classList.remove("hide");
   }
@@ -24,7 +27,7 @@ function App() {
 
 
   return (
-    <div id="app" style={{ "backgroundImage": "url('/lady.gif')" }}>
+    <div id="app" style={{ "backgroundImage": bg }}>
 
       <audio id="bg_audio" loop >
         <source src="spooky.mp3" type="audio/mp3" />
@@ -36,7 +39,7 @@ function App() {
         <p>OPEN IF YOU DARE</p>
       </div>
 
-      <div id="letter_content" class="hide">
+      <div id="letter_content" className="hide">
 
         <div id="typed">
           <Typewriter 

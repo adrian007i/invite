@@ -79,20 +79,13 @@ body {
 }
 
 #confirmation{
-  align-self: center; 
-  margin: auto;
   font-size: 40px;
-  color:red;
+  color: red;
+  align-self: end;
+  line-height: .9;
+  margin: 0 auto;
 }
 
 .Typewriter__cursor{
   display: none;
 }
-/* <Typist avgTypingDelay={200} cursor={{show : false}}>  
-<p>You're invited to</p><Typist.Delay ms={delay} />
-<p><b style={{"color":"red", "fontSize":"30px"} }>"The Awakening"</b></p><Typist.Delay ms={delay} />
-<p>on All Hallow's Eve</p><Typist.Delay ms={delay} />
-<p>at dusk until the witching hour</p><Typist.Delay ms={delay} />
-<p>Private Location</p><Typist.Delay ms={delay} />
-<p>A Masked Event- Costume Required</p>
-</Typist>  */
