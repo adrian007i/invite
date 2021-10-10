@@ -19,6 +19,9 @@ body {
   background-position-x: center;
   color: white;
   display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex;
 }
 
 #letter{
